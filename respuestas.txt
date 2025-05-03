@@ -1,0 +1,20 @@
+Respuestas para las preguntas de reflexion de la acrividad:
+
+1. ¿Que comando usaste para instalar la libreria xlsx?
+
+R/ Use "npm install xlsx", el cual busca en las librerias de npm, una que se llame xlsx, el cual crea y lee hojas en excel, para luego instalar todos los archivos en node_modules, listo para ser usado.
+
+2. ¿Qué función de xlsx convierte un array de objetos en una hoja de cálculo?
+
+R/ Exactamente esta:
+const worksheet = XLSX.utils.json_to_sheet(students);
+
+Esta lo que hace es buscar el objeto llamado students, y con la funcion de XLSX llamada json_to_sheet, la convierte en una hoja de calculo de excel.
+
+3. ¿Qué observaste al abrir output.xlsx en una aplicación de hojas de cálculo?
+
+R/ El documento efectivamente fue leido como una hoja de calculo, mostrando los campos hechos en el objeto students transferido a filas y columnas.
+
+4. ¿Cómo podrías usar esta funcionalidad en un proyecto real (por ejemplo, para exportar datos de una aplicación)?
+
+R/ Se puede usar para tener un excel con los nombres de los usuarios, precios y productos, etc. Usando todo lo que tiene excel a su disposisicion para no tener que pasar todos los datos, a mano, que se introduzcan o añadan en la pagina o el servidor
